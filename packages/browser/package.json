@@ -30,7 +30,7 @@
     "keywords": [],
     "author": "zzx",
     "license": "MIT",
-    "description": "",
+    "description": "zzx-monitor 的浏览器入口 SDK",
     "dependencies": {
         "@zzx/monitor-sdk-core": "workspace:*",
         "@zzx/monitor-sdk-browser-utils": "workspace:*"
