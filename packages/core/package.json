@@ -1,6 +1,7 @@
 {
     "name": "@zzx/monitor-sdk-core",
     "version": "1.0.0",
+    "description": "zzx-monitor SDK 核心包：Transport 抽象 + Integration 插件 + 函数式捕获 API",
     "main": "build/cjs/index.js",
     "module": "build/esm/index.mjs",
     "types": "build/types/index.d.ts",
@@ -27,8 +28,12 @@
         "clean": "rimraf build",
         "typecheck": "tsc --noEmit"
     },
-    "keywords": [],
+    "keywords": [
+        "monitor",
+        "sdk",
+        "frontend",
+        "error-tracking"
+    ],
     "author": "zzx",
-    "license": "MIT",
-    "description": ""
+    "license": "ISC"
 }
