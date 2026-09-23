@@ -29,8 +29,8 @@
     },
     "keywords": [],
     "author": "zzx",
-    "license": "MIT",
-    "description": "",
+    "license": "ISC",
+    "description": "Web Vitals 性能指标采集包",
     "dependencies": {
         "@zzx/monitor-sdk-core": "workspace:*"
     }
