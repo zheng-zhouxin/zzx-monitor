@@ -1,0 +1,26 @@
+{
+    "name": "zzx Monitor Development Environment",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "zzx-monitor",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "pnpm i",
+    "remoteUser": "root",
+    "portsAttributes": {
+        "9092": { "label": "Kafka Broker" },
+        "9093": { "label": "Kafka Controller" },
+        "8123": { "label": "ClickHouse HTTP" },
+        "9000": { "label": "ClickHouse Native" },
+        "5432": { "label": "PostgreSQL" },
+        "6379": { "label": "Redis" }
+    },
+    "remoteEnv": {
+        "CLICKHOUSE_USER": "default",
+        "CLICKHOUSE_PASSWORD": "zzxclickhouse",
+        "CLICKHOUSE_DATABASE": "default",
+        "POSTGRESQL_USERNAME": "postgres",
+        "REDIS_PASSWORD": "zzxredis"
+    },
+    "shutdownAction": "none",
+    "runServices": ["zzx-monitor-kafka", "zzx-monitor-clickhouse", "zzx-monitor-postgresql", "zzx-monitor-redis"],
+    "forwardPorts": [9092, 9093, 8123, 9000, 5432, 6379]
+}

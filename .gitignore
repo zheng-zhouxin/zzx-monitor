@@ -30,5 +30,8 @@ dist-ssr
 
 .turbo
 
-.devcontainer/data
-.devcontainer/postgresql_data
+docker/data
+docker/postgresql_data
+docker/clickhouse_data
+docker/redis_data
+docker/kafka_data
