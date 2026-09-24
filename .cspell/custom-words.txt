@@ -8,6 +8,7 @@ lucide
 metatype
 nums
 passwork
+perfs
 smtps
 tailwindcss
 tanstack
