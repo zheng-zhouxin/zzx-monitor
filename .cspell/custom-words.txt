@@ -17,3 +17,4 @@ typecheck
 typeorm
 vaul
 xiaoer
+zzxclickhouse
